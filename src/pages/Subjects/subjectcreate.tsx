@@ -44,7 +44,7 @@ export default function SubjectCreate() {
     });
     const navigate = useNavigate();
     function onSubmit(values: z.infer<typeof formSchema>) {
-        axios.post('http://localhost:8081/subject/create' , values)
+        axios.post('https://btlltuddd-2.onrender.com/subject/create' , values)
             .then(res => {
                 console.log(res);
                 navigate('/subject')

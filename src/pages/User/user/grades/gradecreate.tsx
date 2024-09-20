@@ -57,7 +57,7 @@ export default function UserCreate() {
         
         const fetchData = async () => {
           try {
-            const response = await axios.get('http://localhost:8081/subject');
+            const response = await axios.get('https://btlltuddd-2.onrender.com/subject');
             setData(response.data);
           } catch (error) {
             console.error('Error fetching data:', error);
@@ -70,7 +70,7 @@ export default function UserCreate() {
     function onSubmit(values: z.infer<typeof formSchema>) {
         const exists = data.some((item:Subjects) => item.subject_code === values.subject_code);
         if(exists){
-            axios.post('http://localhost:8081/grade/create/' + student_id , values)
+            axios.post('https://btlltuddd-2.onrender.com/grade/create/' + student_id , values)
             .then(res => {
                 console.log(res);
                 navigate('/grade/' + student_id)

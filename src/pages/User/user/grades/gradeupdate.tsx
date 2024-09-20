@@ -48,7 +48,7 @@ export default function GradeUpdate() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('http://localhost:8081/grade/subject/' + grade_id);
+        const res = await axios.get('https://btlltuddd-2.onrender.com/grade/subject/' + grade_id);
         
         reset({
           subject_code: res.data.subject_code,
@@ -66,7 +66,7 @@ export default function GradeUpdate() {
   const navigate = useNavigate();
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    axios.put('http://localhost:8081/grade/subject/' + grade_id, values)
+    axios.put('https://btlltuddd-2.onrender.com/grade/subject/' + grade_id, values)
       .then(res => {
         console.log(res);
         navigate('/user');

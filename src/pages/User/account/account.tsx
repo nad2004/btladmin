@@ -21,7 +21,7 @@ export default function Account(){
        
         const fetchData = async () => {
           try {
-            const response = await axios.get('http://localhost:8081/account/student');
+            const response = await axios.get('https://btlltuddd-2.onrender.com/account/student');
             setData(response.data);
           } catch (error) {
             console.error('Error fetching data:', error);

@@ -52,7 +52,7 @@ export default function SubjectUpdate() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('http://localhost:8081/subject/' + subject_code);
+        const res = await axios.get('https://btlltuddd-2.onrender.com/subject/' + subject_code);
 
         
         reset({
@@ -70,7 +70,7 @@ export default function SubjectUpdate() {
   const navigate = useNavigate();
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    axios.put('http://localhost:8081/subject/update/' + subject_code, values)
+    axios.put('https://btlltuddd-2.onrender.com/subject/update/' + subject_code, values)
       .then(res => {
         console.log(res);
         navigate('/account');

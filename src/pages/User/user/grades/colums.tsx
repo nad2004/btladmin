@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/dropdown-menu"
   const handleDelete = async(grade_id: number) =>{
     try{
-      await axios.delete(`http://localhost:8081/grade/subject/${grade_id}`)
+      await axios.delete(`https://btlltuddd-2.onrender.com/grade/subject/${grade_id}`)
       alert("Xóa thành công")
       window.location.reload()
     }catch(err){

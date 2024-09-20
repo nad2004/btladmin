@@ -26,7 +26,7 @@ export default function Grade(){
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.get('http://localhost:8081/grade/' + student_id);
+            const response = await axios.get('https://btlltuddd-2.onrender.com/grade/' + student_id);
             setData(response.data);
           } catch (error) {
             console.error('Error fetching data:', error);

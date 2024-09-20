@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/dropdown-menu"
   const handleDelete = async(subject_code: string) =>{
     try{
-      await axios.delete(`http://localhost:8081/subject/${subject_code}`)
+      await axios.delete(`https://btlltuddd-2.onrender.com/subject/${subject_code}`)
       alert("Xóa thành công")
       window.location.reload()
     }catch(err){

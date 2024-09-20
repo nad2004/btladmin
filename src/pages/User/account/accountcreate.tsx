@@ -44,7 +44,7 @@ export default function AccountCreate() {
     });
     const navigate = useNavigate();
     function onSubmit(values: z.infer<typeof formSchema>) {
-        axios.post('http://localhost:8081/account/student/create' , values)
+        axios.post('https://btlltuddd-2.onrender.com/account/student/create' , values)
             .then(res => {
                 console.log(res);
                 navigate('/account')

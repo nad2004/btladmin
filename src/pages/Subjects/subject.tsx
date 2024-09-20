@@ -22,7 +22,7 @@ export default function Subject(){
        
         const fetchData = async () => {
           try {
-            const response = await axios.get('http://localhost:8081/subject');
+            const response = await axios.get('https://btlltuddd-2.onrender.com/subject');
             setData(response.data);
           } catch (error) {
             console.error('Error fetching data:', error);
