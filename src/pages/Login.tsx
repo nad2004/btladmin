@@ -11,7 +11,7 @@ export default function Login() {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+
   const navigate = useNavigate(); 
 
   const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
