@@ -1,4 +1,4 @@
-
+import  { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -30,7 +30,7 @@ export default function Login() {
       })
       .catch(err => {
         if (err.response && err.response.data.message) {
-          setErrorMessage(err.response.data.message); 
+   
           alert(err.response.data.message);
         } else {
           console.log(err);
