@@ -1,0 +1,23 @@
+
+body{
+    background: rgb(240, 241, 247) !important;
+    .main-content{
+        margin-block-start: 3.5rem;
+        height: calc(100vh - 50px);
+        
+    }
+    
+    .app-header{
+        .header-right-content{
+            .header-link{
+                padding: 1rem 0.65rem;
+                .header-link-icon{
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                    color: #536485;
+                }
+            }
+        }
+    }
+}
