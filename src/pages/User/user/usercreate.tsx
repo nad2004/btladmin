@@ -53,7 +53,7 @@ export default function UserCreate() {
     });
     const navigate = useNavigate();
     function onSubmit(values: z.infer<typeof formSchema>) {
-        axios.put('https://btlltuddd-2.onrender.com/create' , values)
+        axios.post('https://btlltuddd-2.onrender.com/student/create'' , values)
             .then(res => {
                 console.log(res);
                 navigate('/user')
