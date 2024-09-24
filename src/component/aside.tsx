@@ -37,19 +37,6 @@ export default function Aside(){
                                 </Link>
                             </li>
                         </ul>
-                        <ul>
-                            <li className="pl-6">
-                                <Link
-                                    className="block side-menu__item text-slate-400 text-xs hover:text-white relative rounded-lg hover:bg-slate-700"
-                                    to="/dashboard"
-                                >
-                                    Quản Lý Điểm
-                                    <span
-                                        className="absolute left-2 top-1/2 transform -translate-y-1/2 w-1 h-1 border border-primary rounded-full border-white"
-                                    ></span>
-                                </Link>
-                            </li>
-                        </ul>
 
                         </AccordionContent>
                     </AccordionItem>
