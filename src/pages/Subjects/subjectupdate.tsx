@@ -73,7 +73,7 @@ export default function SubjectUpdate() {
     axios.put('https://btlltuddd-2.onrender.com/subject/update/' + subject_code, values)
       .then(res => {
         console.log(res);
-        navigate('/account');
+        navigate('/subject');
       })
       .catch(err => {
         console.error(err);
