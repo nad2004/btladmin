@@ -31,7 +31,7 @@ const breadcrumb = [
 const formSchema = z.object({
   student_id: z.string().min(2).max(50),
   username: z.string().min(2).max(50),
-  password: z.string().min(2).max(50),
+  password: z.string().min(1).max(50),
 });
 
 export default function AccountUpdate() {
